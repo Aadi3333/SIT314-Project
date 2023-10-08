@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Add Floor Page">
+    <meta name="author" content="Louis da Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightSpark! - Add Floor</title>
+    <link rel="icon" href="icons/light.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #3d4748; /* Updated background color */
+            color: white;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .form-group {
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        #addFloor {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #6be8f3; /* Updated button color */
+            color: white;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Added subtle glowing effect */
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        #addFloor:hover {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); /* Enhanced glowing effect on hover */
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header"><!-- header inserted by app.js --></header>
+
+    <ul>
+        <li><a href="home.html">Back</a></li>
+    </ul>
+
+    <div class="form-group">
+        <label for="floorName">Floor Name:</label>
+        <input type="text" class="form-control" id="floorName" />
+    </div>
+
+    <button id="addFloor">Add Floor</button>
+
+    <footer class="footer"></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="addFloor.js"></script>
+</body>
+
+</html>

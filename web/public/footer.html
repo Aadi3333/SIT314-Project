@@ -1,0 +1,15 @@
+<!-- Move the script to the bottom of the HTML, just before the closing </body> tag -->
+<footer>        
+    <div class="py-4 sticky-bottom">
+        <div class="container text-center">
+            <p class="text-muted mb-0 py-2">© IoT SmartLights <span id="year"></span></p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    
+    let year =  new Date().getFullYear();
+    var contentHolder = document.getElementById('year');
+    contentHolder.innerHTML = year;
+</script>

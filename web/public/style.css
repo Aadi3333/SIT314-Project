@@ -1,0 +1,225 @@
+/* HEADER SECTION FOR EVERY PAGE -- see app.js */
+/* BrightSpark! logo (LH image) for header */
+.headerLogoImage {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    display:inline;
+    float:left;
+}
+/* Header Title - BrightSpark! */
+h1 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Segoe UI';
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-bottom: double #efb000 10px;
+}
+h2, h3 { color:white}
+/* standard body for every page */
+body { 
+    background-color: rgb(48, 48, 48);
+    padding-left: 20%;
+    padding-right: 20%;
+}
+/* HORIZONTAL NAVBAR ON EVERY PAGE -- see app.js */
+/* horizontal navbar on each page - see app.js */
+ul {
+    list-style-type:none;
+    padding-bottom: 60px;
+    margin-left: -40px;
+}
+/* horizontal navbar on each page - see app.js */
+li {
+    float:left;
+}
+/* horizontal navbar on each page - see app.js */
+li a {
+    display:block;
+    color:white;
+    text-align: center;
+    margin-top: -10px;
+    text-decoration: none;
+    font-size: 32px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-left: double white 1px;
+}
+.currentPage {
+    color: rgb(48, 48, 48);
+    background-color: white;
+    font-weight: 800;
+}
+/* horizontal navbar on each page - see app.js */
+a:hover {
+    box-shadow: #efb000 0 3px 3px 0;
+    color: black;
+    background-color: white;
+}
+/* horizontal navbar on each page, tab for current page - see app.js */
+a:active {
+    color: black;
+    background-color: #efb000;
+}
+
+/* DATA DISPLAY TABLE */
+table {
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+th {
+    font-size: 20px;
+    color: white;
+}
+td {
+    font-size: 18px;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    white-space:nowrap;
+}
+/* DATABASE INTERACTION BUTTONS */
+
+.dataButtons a, button {
+    display:inline-block;
+    color:black;
+    background-color:#efb000;
+    text-align:center;
+    padding:3px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Tahoma;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.dataButtons a:hover, button:hover {
+    box-shadow:black 0 3px 2px 0;
+    background-color:white;
+    color:rgb(0, 75, 0);
+    width: 50%;
+}
+
+/* device data buttons */
+.deviceDataButtons a {
+    float:center;
+    display:block;
+    color:white;
+    background-color:#efb000;
+    text-align:center;
+    padding:15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Tahoma;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+/* navigation bar change color on hover */
+.deviceDataButtons a:hover {
+    background-color:#efb000;
+    color:white;
+}
+label {
+    font-size: 24px;
+    color: white;
+}
+input[type=text] {
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    padding: 12px 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: rgb(180, 180, 180);
+    color: black;
+}
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    background-color: #efb000;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 15px 15px 15px 15px;
+    font-size: 24px;
+}
+button:hover {
+    box-shadow: 0 2px 2px 0 white;
+}
+.lightControlButton {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+    background-color: #efb000;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 5px 5px 5px 5px;
+    font-size: 14px;
+    max-width:60px;
+}
+
+.deleteButton {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    background-color: #AA0000;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 5px 5px 5px 5px;
+    font-size: 14px;
+    max-width:60px;
+}
+
+.editButton {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+    background-color: #efb000;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 5px 5px 5px 5px;
+    font-size: 14px;
+    max-width:60px;
+}
+
+.home {
+    color: white;
+    position:relative;
+    bottom: 0;
+    left: 50%;
+    font-size: 24px;
+}
+
+/* Pop up Forms */
+.formPopup {
+    display: none;
+    position: fixed;
+    top: 180px;
+    left: 25%;
+    background-color:rgb(48, 48, 48);
+    border: 3px solid white;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+/* footer for each page - see app.js */
+.footer {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
